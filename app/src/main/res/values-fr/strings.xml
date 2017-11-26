@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meteorquest</string>
+    <string name="text_hint_password">Mot de pass</string>
+    <string name="hint_password">Mots de passe</string>
+    <string name="hint_confirm_password">Confirmation du mot de passe</string>
+    <string name="text_register">Inscription</string>
+    <string name="error_message_name">Saisir votre nom</string>
+    <string name="error_message_email">Saisir un email valide</string>
+    <string name="error_message_age">Saisir votre age</string>
+    <string name="error_message_password">Saisir votre mots de passe</string>
+    <string name="success_message">Inscription réussie</string>
+    <string name="text_not_member">Créer un compte</string>
+    <string name="text_already_member">Vous avez un compte ? Connectez-vous</string>
+    <string name="error_email_exists">Email déjà existant</string>
+    <string name="error_password_match">Les mots de passe ne sont pas identique</string>
+    <string name="error_valid_email_password">Email ou mots de passe incorect</string>
+    <string name="action_settings">Configurations</string>
+    <string name="already_login">Vous avez un compte ? Connectez-vous</string>
+    <string name="text_hello">Bonjour</string>
+    <string name="hint_name">Nom</string>
+    <string name="hint_email">Email</string>
+    <string name="text_login">Login</string>
+    <string name="text_pseudo">Pseudo</string>
+    <string name="text_accounts">Tous les compte</string>
+    <string name="text_hint_email" translatable="false">Email</string>
+    <string name="text_logo" translatable="false">Meteorquest</string>
+</resources>
