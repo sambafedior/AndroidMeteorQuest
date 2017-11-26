@@ -18,4 +18,8 @@
     <item
         android:drawable="@drawable/drawable_shade_gradient"
         android:duration="10000" />
+
+    <item
+        android:drawable="@drawable/drawable_meteor_gradient"
+        android:duration="10000" />
 </animation-list>
