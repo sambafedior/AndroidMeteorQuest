@@ -1,6 +1,7 @@
 package fr.fedior.samba.meteorquest;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
@@ -54,17 +55,17 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
      */
     @SuppressLint("WrongViewCast")
     private void initViews() {
-        constraintLayout = (ConstraintLayout) findViewById(R.id.constraintLayout);
-        textInputLayoutName = (TextInputLayout) findViewById(R.id.textInputLayoutName);
-        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
-        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
-        textInputLayoutConfirmPassword = (TextInputLayout) findViewById(R.id.textInputLayoutConfirmPassword);
-        editTextName = (EditText) findViewById(R.id.textInputEditTextName);
-        editTextEmail = (EditText) findViewById(R.id.textInputEditTextEmail);
-        editTextPassword = (EditText) findViewById(R.id.textInputEditTextPassword);
-        editTextConfirmPassword = (EditText) findViewById(R.id.textInputEditTextConfirmPassword);
-        buttonRegister = (Button) findViewById(R.id.buttonRegister);
-        appCompatTextViewLoginLink = (AppCompatTextView) findViewById(R.id.appCompatTextViewLoginLink);
+        constraintLayout = findViewById(R.id.constraintLayout);
+        textInputLayoutName = findViewById(R.id.textInputLayoutName);
+        textInputLayoutEmail = findViewById(R.id.textInputLayoutEmail);
+        textInputLayoutPassword = findViewById(R.id.textInputLayoutPassword);
+        textInputLayoutConfirmPassword = findViewById(R.id.textInputLayoutConfirmPassword);
+        editTextName = findViewById(R.id.textInputEditTextName);
+        editTextEmail = findViewById(R.id.textInputEditTextEmail);
+        editTextPassword = findViewById(R.id.textInputEditTextPassword);
+        editTextConfirmPassword = findViewById(R.id.textInputEditTextConfirmPassword);
+        buttonRegister = findViewById(R.id.buttonRegister);
+        appCompatTextViewLoginLink = findViewById(R.id.appCompatTextViewLoginLink);
     }
 
     private void initBackground() {
@@ -142,20 +143,18 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
             user.setName(editTextName.getText().toString().trim());
             user.setEmail(editTextEmail.getText().toString().trim());
             user.setPassword(editTextPassword.getText().toString().trim());
-
             databaseHelper.addUser(user);
 
             // Snack Bar to show success message that record saved successfully
             Snackbar.make(constraintLayout, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
             emptyInputEditText();
+            Intent intent = new Intent(activity, Login.class);
 
-
+            startActivity(intent);
         } else {
             // Snack Bar to show error message that record already exists
             Snackbar.make(constraintLayout, getString(R.string.error_email_exists), Snackbar.LENGTH_LONG).show();
         }
-
-
     }
 
     /**

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Meteorquest</string>
-    <string name="text_hint_password">Mot de pass</string>
+    <string name="text_hint_password">Mot de passe</string>
     <string name="hint_password">Mots de passe</string>
     <string name="hint_confirm_password">Confirmation du mot de passe</string>
     <string name="text_register">Inscription</string>

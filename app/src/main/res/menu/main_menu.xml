@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_aide"
+        android:icon="@drawable/ic_help_black_24dp"
+        android:title="@string/aide"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_item"
+        android:icon="@drawable/ic_icons8_inventory_flow_50"
+        android:title="@string/item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_mon_compte"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/mon_compte"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_echange"
+        android:icon="@drawable/ic_icons8_inventory_flow_50"
+        android:title="@string/echange"
+        app:showAsAction="always" />
+</menu>

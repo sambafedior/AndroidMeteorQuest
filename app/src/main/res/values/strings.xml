@@ -25,4 +25,11 @@
     <string name="text_hello">Hello,</string>
     <string name="text_title">Android Tutorials Hub</string>
     <string name="already_login">Already a member? Login</string>
+    <string name="valider">Valider</string>
+    <string name="fermer">Fermer</string>
+    <string name="message">Message</string>
+    <string name="aide">Aide</string>
+    <string name="item">Item</string>
+    <string name="mon_compte">Mon Compte</string>
+    <string name="echange">Echange</string>
 </resources>

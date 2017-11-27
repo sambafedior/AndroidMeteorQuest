@@ -3,7 +3,7 @@
     <!-- Default color -->
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ff4081</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
 
@@ -29,7 +29,7 @@
 
     <!-- 5th Gradient color -->
     <color name="colorLithium_A400">#6D6027</color>
-    <color name="colorLithium_900">#D3CBB8</color>
+    <color name="colorLithium_900">#d3cbb8</color>
     <!-- ./ 5th Gradient color -->
 
     <!-- 6th Gradient color -->
@@ -39,6 +39,6 @@
 
     <!-- 7th Gradient color -->
     <color name="colorMeteor_A400">#26293a</color>
-    <color name="colorMeteor_900">#D3CBB8</color>
+    <color name="colorMeteor_900">#d3cbb8</color>
 
 </resources>
