@@ -47,6 +47,8 @@ public class Main extends AppCompatActivity {
         }
     }
 
+
+
     private void showExchange() {
 
     }

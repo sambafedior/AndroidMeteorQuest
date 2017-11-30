@@ -11,8 +11,8 @@ import android.widget.ViewFlipper;
 public class Welcome extends AppCompatActivity implements View.OnClickListener {
 
     private ViewFlipper viewFlipper;
-    private float lastX;
-    private FloatingActionButton floatingActionButtonExit;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,11 @@ public class Welcome extends AppCompatActivity implements View.OnClickListener {
 
     private void init() {
         viewFlipper = findViewById(R.id.viewFlipper);
-        floatingActionButtonExit = findViewById(R.id.floatingActionButtonExit);
-        floatingActionButtonExit.setOnClickListener(this);
+
+
     }
 
-
+    private float lastX;
     // Using the following method, we will handle all screen swaps.
     public boolean onTouchEvent(MotionEvent touchevent) {
         switch (touchevent.getAction()) {
@@ -73,10 +73,6 @@ public class Welcome extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v == floatingActionButtonExit) {
-            Intent intent = new Intent(this, Main.class);
-            startActivity(intent);
-            finish();
-        }
+
     }
 }
